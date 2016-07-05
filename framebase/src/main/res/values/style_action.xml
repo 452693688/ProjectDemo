@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--无法设置"三"居中，设置高50dp时自动居中，
+    左右距离调整toolbar.setPadding(-(int) (left + 0.5), 0, 0, 0);-->
+    <style name="ToolbarLayout" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+        <item name="android:left">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+    <!--设置action左侧"三"的大小-->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--"三"的变为箭头时 是否旋转-->
+        <item name="spinBars">false</item>
+        <!--上下间隙-->
+        <item name="gapBetweenBars">2dp</item>
+        <!--"三"的整体高度-->
+        <item name="drawableSize">7dp</item>
+        <!--"三"的整体长度-->
+        <item name="barLength">7dp</item>
+        <!--设置action左侧"三"的颜色-->
+        <item name="color">@color/colorF</item>
+        <!--线高-->
+        <item name="thickness">1dp</item>
+        <!--箭长-->
+        <item name="arrowShaftLength">7dp</item>
+        <!--箭头长-->
+        <item name="arrowHeadLength">3dp</item>
+        <!--无用-->
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:maxHeight">7dp</item>
+        <item name="android:maxWidth">7dp</item>
+    </style>
+
+    <!--设置android.support.design.widget.TabLayoutd的
+         app:tabTextAppearance="@style/CustomTabLayout"
+         用于动态修改tab-->
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTextAppearance</item>
+    </style>
+
+    <style name="CustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

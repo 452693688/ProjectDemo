@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.framebase.app"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:name="com.framebase.base.ui.activity.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+        <activity android:name="com.framebase.base.ui.activity.TestMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name="com.framebase.base.ui.activity.TestMainActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.RecyclerRenovationActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.NetActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.FixationBarRvActivity"
+             />
+        <activity android:name="com.framebase.base.ui.activity.test.FixationBarPvActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.FixationBarNSVActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.SlideBarRvActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.SlideBarPvActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.SlideBarNSVActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.BehaviorActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.LinkActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.LinkRenovationActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.MyScrollViewActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.LoadingActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.TextViewActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.WebViewActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.ValueAnimatorActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.ObjectAnimatorActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.InterpolatorActivity"/>
+        <activity android:name="com.framebase.base.ui.activity.test.StateActity"/>
+        <activity
+            android:name="com.framebase.base.ui.activity.test.KeyboardActivity"
+            android:windowSoftInputMode="adjustResize"
+            />
+
+        <!-- 网络监听 -->
+        <receiver android:name="com.framebase.base.ui.receive.NetStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>
