@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CollapsingAvatarToolbar">
+        <!--收缩内边距-->
+        <attr name="collapsedPaddingTop" format="dimension" />
+        <attr name="collapsedPaddingBottom" format="dimension" />
+        <attr name="collapsedPaddingLeft" format="dimension" />
+        <attr name="collapsedPaddingRight" format="dimension" />
+        <!--展开内边距-->
+        <attr name="expandedPaddingTop" format="dimension" />
+        <attr name="expandedPaddingBttom" format="dimension" />
+        <attr name="expandedPaddingLeft" format="dimension" />
+        <attr name="expandedPaddingRight" format="dimension" />
+
+        <attr name="collapsedImageSize" format="dimension" />
+        <attr name="expandedImageSize" format="dimension" />
+        <attr name="collapsedTextSize" format="dimension" />
+        <attr name="expandedTextSize" format="dimension" />
+        <attr name="expandedChildViewMarginTop" format="dimension" />
+    </declare-styleable>
+
+</resources>

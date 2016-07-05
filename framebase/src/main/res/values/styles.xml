@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#FF4081</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <!--设置toolbar的属性-->
+    <style name="BaseActivity.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--设置atcionBar颜色-->
+        <item name="colorPrimary">#333333</item>
+        <!--设置状态栏颜色-->
+        <item name="colorPrimaryDark">#ff3333</item>
+        <!--#512DA8-->
+        <!--设置底部虚拟键颜色-->
+        <item name="colorAccent">#FF4081</item>
+        <!--设置窗口颜色-->
+        <item name="android:windowBackground">@color/colorF</item>
+        <item name="toolbarStyle">@style/FillToolbar</item>
+        <!--设置窗口左侧按钮颜色-->
+        <item name="android:colorControlNormal">@color/colorAccent</item>
+    </style>
+    <!-- 设置toolbar左侧能完全填充-->
+    <style name="FillToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+    <!--设置actionbar的字体颜色和大小-->
+    <style name="ToolbarTitleAppearance">
+        <item name="android:textSize">30sp</item>
+        <!--<item name="android:textStyle">normal</item>-->
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <!--设置actionbar的字体颜色和大小-->
+    <style name="ToolbarTitleExpandedAppearance">
+        <item name="android:textSize">10sp</item>
+        <!--<item name="android:textStyle">normal</item>-->
+        <item name="android:textColor">#01000000</item>
+    </style>
+</resources>

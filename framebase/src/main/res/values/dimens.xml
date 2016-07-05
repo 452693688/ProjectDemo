@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--高度-->
+    <dimen name="action_bar_small">42dp</dimen>
+    <dimen name="actio_bar_h50">50dp</dimen>
+    <!---->
+    <dimen name="dimen16">16dp</dimen>
+    <dimen name="dimen20">20dp</dimen>
+    <dimen name="dimen25">25dp</dimen>
+    <dimen name="dimen30">30dp</dimen>
+    <dimen name="dimen256">256dp</dimen>
+
+    <!--可以折叠的actionbar用-->
+    <!--收缩内边距-->
+    <dimen name="default_collapsed_padding_left">16dp</dimen>
+    <dimen name="default_collapsed_padding_right">46dp</dimen>
+    <dimen name="default_collapsed_padding_top">10dp</dimen>
+    <dimen name="default_collapsed_padding_bottom">10dp</dimen>
+    <!--展开内边距-->
+    <dimen name="default_expanded_padding_left">6dp</dimen>
+    <dimen name="default_expanded_padding_right">6dp</dimen>
+    <dimen name="default_expanded_padding_top">0dp</dimen>
+    <dimen name="default_expanded_padding_bottom">0dp</dimen>
+
+    <dimen name="default_collapsed_image_size">40dp</dimen>
+    <dimen name="default_expanded_image_size">60dp</dimen>
+    <dimen name="default_collapsed_text_size">12sp</dimen>
+    <dimen name="default_expanded_text_size">16sp</dimen>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ff0000"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/state_abl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/state_toobar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_small"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title=" "
+                />
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:background="#ff0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:text="称呼哈哈哈哈哈哈哈哈哈称呼哈哈哈哈哈哈哈哈哈称呼哈哈哈哈哈哈哈哈哈称呼哈哈哈哈哈哈哈哈哈称呼哈哈哈哈哈哈哈哈哈"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <include layout="@layout/action_bar_fixation"/>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            />
+
+    </android.support.v4.widget.DrawerLayout>
+    <!--首次进入页面要显示的加载视图-->
+    <RelativeLayout
+        android:layout_marginTop="@dimen/action_bar_small"
+        android:id="@+id/base_lodding_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+</RelativeLayout>

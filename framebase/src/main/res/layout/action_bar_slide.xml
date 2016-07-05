@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--设置action-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/bar_app_bar_layout_slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+        <!--
+                0.scroll: 所有想滚动出屏幕的view都需要设置这个flag， 没有设置这个flag的view将被固定在屏幕顶部。例如，TabLayout 没有设置这个值，将会停留在屏幕顶部。
+                1.enterAlways: 设置这个flag时，向下的滚动都会导致该view变为可见，启用快速“返回模式”。
+                2.enterAlwaysCollapsed: 当你的视图已经设置minHeight属性又使用此标志时，你的视图只能已最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。
+                3.exitUntilCollapsed: 滚动退出屏幕，最后折叠在顶端。
+                可以设置颜色Toolbar的android:background="@color/color3"
+-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/action_bar_toobar_slide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_small"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title=" "
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            />
+
+        <!--ViewPager容器标签-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/action_bar_tab_slide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color3"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:visibility="gone"
+            />
+    </android.support.design.widget.AppBarLayout>
+    <!--内容-->
+    <RelativeLayout
+        android:id="@+id/action_bar_count_slide_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+</android.support.design.widget.CoordinatorLayout>
